@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Dosis';
+    font-style: normal;
+    }
+       
+    button{
+        border: none;
+    }
+    
+    
+    header{
+        padding: 50px 0px;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    
+
+    nav,
+    ul,
+    li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+    }
+
+
+    nav .home{
+        color:#9A93FF;
+    }
+    
+
+    .highlighted-word{
+        color: #ADA7FF;
+    }
+
+
+    li{
+        width: 100px;
+        cursor: pointer;
+    
+    }
+
+
+    div.main-container{
+        display: flex;
+        height: 763px;
+        padding: 60px 134px 27px 135px;
+        justify-content: center;
+        align-items: center;
+        margin-right: -70px; 
+        z-index: 1;
+
+        
+    }
+
+
+    h1{
+        font-family: Dosis;
+        font-size: 69px;
+        font-style: normal;
+        font-weight: 700;
+        margin-bottom: 23px;
+        
+    }
+
+   
+    div.result{
+        width: 442px;
+        display: flex;
+        justify-content: space-between ;
+    }
+
+    
+    h2{
+        font-family: Dosis;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 650;
+    }
+
+    p .result{
+        font-family: Dosis;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    }
+    
+
+    div.main_buttons{
+        width: 400px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 60px 0px;
+    }
+
+    button.adopt_now{
+        display: flex;
+        padding: 16px 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 999px;
+        background: #ADA7FF;
+        color: white;
+        cursor: pointer;  
+    }
+
+    button.watch_me{
+        display: flex;
+        padding: 16px 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 999px;
+        background: white;
+        color: #ADA7FF;
+        cursor: pointer;  
+    }
+    
+    button.get_started{
+        display: flex;
+        right: 134px;
+        border-radius: 999px;
+        background: #ADA7FF;
+        padding: 16px 32px;
+        color: white;
+        cursor: pointer;
+    }
+
+    
