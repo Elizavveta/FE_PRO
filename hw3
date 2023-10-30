@@ -1,0 +1,128 @@
+// 1. отфильтровать нечетные числа
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const oddNumbers = [];
+
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] % 2 !== 0) {
+    oddNumbers.push(numbers[i]);
+  }
+}
+console.log(oddNumbers);
+
+// 2. Отфильтровать строки длинее 5 символов
+const words = ['apple', 'cat', 'banana', 'dog', 'elephant', 'car', 'bat']
+const longWords = [];
+
+for (let i = 0; i < words.length; i++) {
+  if (words[i].length > 5) {
+    longWords.push(words[i]);
+  }
+}
+console.log(longWords); 
+
+// 3. Оставить только строки
+const mixedTypes = [123, 'apple', { fruit: 'apple' }, 'banana', true, 'car', false]
+const strings = [];
+
+for (let i = 0; i < mixedTypes.length; i++) {
+  if (typeof mixedTypes[i] === 'string') {
+    strings.push(mixedTypes[i]);
+  }
+}
+console.log(strings);
+
+// 4. Офильтровать строки которые начинаются на a
+const words2 = ['apple', 'banana', 'apricot', 'grape', 'avocado', 'kiwi']
+
+const filteredWords2 = [];
+
+for (let i = 0; i < words2.length; i++) {
+  if (words2[i].startsWith('a')) {
+    newWords2.push(words2[i]);
+  }
+}
+console.log(newdWords2);
+
+//  5. Отфильтровать строки, которые не содержат букву e
+const words3 = ['apple', 'banana', 'cherry', 'date', 'fig', 'grape', 'kiwi']
+const filteredWords3 = [];
+
+for (let i = 0; i < words3.length; i++) {
+  if (!words3[i].includes('e')) {
+    filteredWords3.push(words3[i]);
+  }
+}
+console.log(filteredWords3);
+
+// 6. Посложнее. Отфильтровать студентов с оценками выше 80
+const students = [
+  { name: 'John', grade: 85 },
+  { name: 'Jane', grade: 78 },
+  { name: 'Doe', grade: 90 },
+  { name: 'Smith', grade: 76 },
+  { name: 'Chris', grade: 81 },
+]
+
+for(let i = 0; i < students.length; i++){
+    if(students[i].grade > 80){
+        topStudents.push(students[i]);
+    }
+}
+console.log(topStudents);
+
+// 7. Сложная. Отфильтровать повторяющиеся числа
+// можно использовать indexOf()
+const duplicates = [1, 2, 3, 2, 4, 5, 5, 6, 7, 8]
+
+// 2.1 Добавить восклицательный знак в конце каждого слова
+const words2 = ['hello', 'world', 'javascript']
+const wordsNew = [];
+
+for (let i = 0; i < words2.length; i++) {
+  wordsNew.push(words2[i] + '!');
+}
+console.log(wordsNew);
+
+// 2.2  Добавить нумерацию каждого слова 1. Apple etc.
+const words1 = ['apple', 'banana', 'cherry']
+const numberedWords = [];
+
+for (let i = 0; i < words1.length; i++) {
+  numberedWords.push(`${i + 1}. ${words1[i]}`);
+}
+console.log(numberedWords);
+
+
+// 2.3 Сделать все числа положительными
+const numbers3 = [1, -2, 3, -4, 5]
+
+// 2.4 Сделать каждое число строкой
+const numbers4 = [5, 10, 15, 20]
+const stringNumbers = [];
+
+for (let i = 0; i < numbers4.length; i++) {
+  stringNumbers.push(String(numbers4[i]));
+}
+console.log(stringNumbers);
+
+// 2.5 Умножить каждый элемент на его индекс
+const numbers5 = [1, 2, 3, 4, 5]
+const newNumbers = [];
+
+for (let i = 0; i < numbers5.length; i++) {
+  newNumbers.push(numbers5[i] * i);
+}
+console.log(newNumbers);
+
+// 2.6 Прибавить к числу 10 если его индекс кратен 3
+const numbers6 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const tenNumbers = [];
+
+for (let i = 0; i < numbers6.length; i++) {
+  if (i % 3 === 0) {
+    tenNumbers.push(numbers6[i] + 10);
+  } else {
+    tenNumbers.push(numbers6[i]);
+  }
+}
+console.log(tenNumbers);
